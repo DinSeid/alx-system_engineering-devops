@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# a script that listens on poer 98 on localhost
+# Script that displays all active IPv4 IPs on the machine it’s executed on.
 
-nc -l localhost 98
+hostname -I | cut -d' ' -f1 ; hostname -i
